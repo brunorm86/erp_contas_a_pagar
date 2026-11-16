@@ -26,7 +26,7 @@ public class ConsoleUtil {
     private static final DecimalFormat FORMATO_MOEDA;
 
     static {
-        DecimalFormatSymbols symbols = new DecimalFormatSymbols(new Locale("pt", "BR"));
+        DecimalFormatSymbols symbols = new DecimalFormatSymbols(Locale.of("pt", "BR"));
         symbols.setDecimalSeparator(',');
         symbols.setGroupingSeparator('.');
         FORMATO_MOEDA = new DecimalFormat("#,##0.00", symbols);
